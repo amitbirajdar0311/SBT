@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Soft background color */
+}
+
+.header {
+    /* background-color: #d6d4d4; */
+    /* color: #fff; */
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #d6d4d4;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.invoice-header {
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.invoiceDate{
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+.address-banner {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.address-banner p {
+    margin: 5px 0;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.dropdown select,
+.dropdown input[type='text'],
+.dropdown input[type='date'] {
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s, background-color 0.3s;
+    background-color: #fff;
+    color: #333; /* Text color for input fields */
+}
+
+.dropdown input[type='text']:focus,
+.dropdown input[type='date']:focus,
+.dropdown select:focus {
+    border-color: #6e90e6; /* Highlight border color on focus */
+    background-color: #f0f5ff; /* Light background color on focus */
+}
+
+/* Add color to table */
+table {
+    border-spacing: 0;
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+    background-color: #e0e0e0;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    text-align: left;
+}
+
+/* Add hover effect to table rows */
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+.upload{
+    margin: 0px 86px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn{
+    display:block;
+    margin:auto;
+    border-radius:7px;
+    background-color: rgb(236, 240, 240);
+    color:black;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+    margin:auto;
+    text-align: center;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .dropdown select,
+    .dropdown input[type='text'],
+    .dropdown input[type='date'] {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .dropdown input[type='text'],
+    .dropdown input[type='date'] {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 22px;
+    }
+    
+    .dropdown select,
+    .dropdown input[type='text'],
+    .dropdown input[type='date'] {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    th,
+    td {
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .dropdown select,
+    .dropdown input[type='text'],
+    .dropdown input[type='date'] {
+        padding: 6px;
+        font-size: 12px;
+    }
+    
+    th,
+    td {
+        padding: 6px;
+    }
+}
+
+
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Footer Links */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 10px;
+}
