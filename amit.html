@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Storage and Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #data-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #data-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .data-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .data-item button {
+            background-color: #ff4b4b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .data-item button:hover {
+            background-color: #ff3333;
+        }
+
+        #input-data {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data Storage and Manipulation</h1>
+    <div id="data-container">
+        <input type="text" id="input-data" placeholder="Enter data...">
+        <button onclick="addData()">Add Data</button>
+        <ul id="data-list"></ul>
+    </div>
+
+    <script>
+        const dataList = document.getElementById('data-list');
+        const input = document.getElementById('input-data');
+
+        function addData() {
+            const data = input.value.trim();
+            if (data !== '') {
+                const listItem = document.createElement('li');
+                listItem.className = 'data-item';
+                listItem.innerHTML = `
+                    <span>${data}</span>
+                    <button onclick="removeData(this)">Delete</button>
+                `;
+                dataList.appendChild(listItem);
+                input.value = '';
+            }
+        }
+
+        function removeData(button) {
+            const listItem = button.parentNode;
+            dataList.removeChild(listItem);
+        }
+    </script>
+</body>
+</html>

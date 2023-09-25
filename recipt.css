@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #1d1c1c;
+}
+
+body{
+    margin: 0 100px;
+    padding: 10px;
+    border: 3px solid black;
+    
+}
+
+header{
+    display: flex;
+    padding: 10px 0;
+        background-color: #d6d4d4
+    
+
+}
+header > .logo{
+    flex-basis: 10%;
+}
+header .header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d6d4d4;
+}
+.address-banner{
+    width: 75%;
+    text-align: center;
+    padding-top: 5px;
+}
+.taxInvoiceTitle{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 600;
+    color: gray;
+    padding: 5px 0;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+.invoiceAddress{
+    display: flex;
+}
+.companyAddress{
+    flex-basis: 50%;
+    font-size: 13px;
+    padding: 10px;
+}
+.companyAddress h4{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+address{
+    width: 80%;
+}
+.invoiceDetails{
+    font-size: 13px;
+    padding: 10px;
+    line-height: 20px;
+   
+}
+.invoice{
+    width: 100%;
+}
+
+table.invoice{
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    margin: 10px 0;
+}
+th,td{
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    /* background: black; */
+}
+
+.invoiceSignature{
+    display: flex;
+}
+.invoiceDetails{
+    flex-basis: 80%;
+}
+.invoiceStamp{
+    /* display: flex;
+    flex-direction: column; */
+    font-size: 13px;
+    text-align: center;
+    /* border:2px solid red; */
+    /* vertical-align: middle; */
+    margin:auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+/* Apply styles to the image inside the .invoiceStamp class */
+
+    /* Apply styles to the image inside the .invoiceStamp class */
+.invoiceStamp img {
+    width: 150px;
+    height: 81px;
+    display: block;
+    margin: 0px auto;
+    object-fit: cover;
+}
+
+
+
+
+/* Add this CSS code to your stylesheet */
+
+  
+  .view {
+  
+    float: right;
+    padding: 2px 64px;
+  }
+  
